@@ -2,69 +2,96 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sobre mim</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css?family=Josefin Sans"
+            href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;600;700&display=swap"
             rel="stylesheet"
         />
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body
-        class="m-[10%] font-['Josefin_Sans'] bg-[#fbf1c7] text-[#3c3836] flex flex-col items-center"
+        class="font-['Josefin_Sans'] bg-[#fbf1c7] text-[#3c3836] min-h-screen flex flex-col items-center"
     >
         <header
-            class="fixed w-full top-0 left-0 bg-[#3c3836] text-[#fbf1c7] p-[10px] box-border z-[200]"
+            class="w-full bg-[#3c3836] text-[#fbf1c7] px-4 py-3 box-border sticky top-0 z-[200]"
         >
-            <h1>Sobre mim!</h1>
+            <h1 class="max-w-[600px] mx-auto text-lg font-bold">Sobre mim!</h1>
         </header>
-        <img
-            src="https://github.com/ThallesFelipe.png"
-            alt="Foto de perfil"
-            class="w-[150px] rounded-full border-[3px] border-[#3c3836] p-[5px] block mx-auto"
-        />
 
-        <p id="nome" class="text-center font-bold text-[35px]">
-            Meu nome é Thalles Felipe
-        </p>
+        <main
+            class="w-full max-w-[600px] flex flex-col items-center px-5 sm:px-6 pt-8 sm:pt-10 pb-10"
+        >
+            <img
+                src="https://github.com/ThallesFelipe.png"
+                alt="Foto de perfil"
+                class="w-[120px] h-[120px] sm:w-[150px] sm:h-[150px] object-cover rounded-full border-[3px] border-[#3c3836] p-[5px] block mx-auto bg-[#fbf1c7]"
+            />
 
-        <h2>Eu gosto de:</h2>
-        <ul>
-            <li>
-                <strong>Pesquisa Operacional e Otimização Combinatória</strong>
-            </li>
-            <li>
-                <strong
-                    >Filmes:
-                    <a href="https://letterboxd.com/thallesellaht/"
-                        >Meu Letterboxd</a
+            <p
+                id="nome"
+                class="text-center font-bold text-2xl sm:text-3xl md:text-[35px] leading-tight mt-4"
+            >
+                Meu nome é Thalles Felipe
+            </p>
+            <p class="text-center text-sm sm:text-base mt-1 opacity-80">Gado Bravo, MG</p>
+
+            <h2 class="self-start font-bold text-xl mt-8 mb-2 border-b-2 border-[#3c3836] pb-1">
+                Eu gosto de:
+            </h2>
+            <ul
+                class="self-start w-full bg-[#f2e5bc] border border-[#d5c48f] rounded-[5px] px-6 py-4 list-disc space-y-2 marker:text-[#79740e]"
+            >
+                <li>
+                    <strong>Pesquisa Operacional e Otimização Combinatória</strong>
+                </li>
+                <li>
+                    <strong
+                        >Filmes:
+                        <a
+                            href="https://letterboxd.com/thallesellaht/"
+                            class="text-[#79740e] underline underline-offset-2 hover:opacity-80"
+                            >Meu Letterboxd</a
+                        >
+                    </strong>
+                </li>
+                <li><strong>Jogos (Xadrez e Minecraft)</strong></li>
+                <li><strong>Música</strong></li>
+            </ul>
+
+            <div class="w-full flex flex-col sm:flex-row gap-2 sm:gap-3 mt-4">
+                <div
+                    class="flex-1 text-center p-3 sm:p-4 bg-[#79740e] text-[whitesmoke] rounded-[5px]"
+                >
+                    (38) 9 9802-2806
+                </div>
+                <div
+                    class="flex-1 text-center p-3 sm:p-4 bg-[#3c3836] text-[#fbf1c7] rounded-[5px]"
+                >
+                    Gado Bravo, MG
+                </div>
+            </div>
+
+            <footer class="mt-8 pt-4 w-full text-center border-t border-[#d5c48f]">
+                <p class="mb-1">Me encontre em:</p>
+                <div class="flex items-center justify-center gap-2">
+                    <a
+                        href="https://www.linkedin.com/in/thallesfras/"
+                        target="_blank"
+                        class="text-[#79740e] font-bold underline underline-offset-2 hover:opacity-80"
+                        >LinkedIn</a
                     >
-                </strong>
-            </li>
-            <li><strong>Jogos (Xadrez e Minecraft)</strong></li>
-            <li><strong>Música</strong></li>
-        </ul>
-
-        <div class="p-5 bg-[#79740e] text-[whitesmoke] rounded-[5px] m-[10px]">
-            (38) 9 9802-2806
-        </div>
-        <div class="p-5 bg-[#79740e] text-[whitesmoke] rounded-[5px] m-[10px]">
-            Gado Bravo, MG
-        </div>
-
-        <footer class="mt-8 text-center">
-            <p>Me encontre em:</p>
-            <a
-                href="https://www.linkedin.com/in/thallesfras/"
-                target="_blank"
-                class="text-[#79740e] font-bold hover:text-brown-500"
-                >LinkedIn</a
-            >
-            <a
-                href="https://github.com/ThallesFelipe"
-                target="_blank"
-                class="text-[#79740e] font-bold hover:text-brown-500"
-                >GitHub</a
-            >
-        </footer>
+                    <span aria-hidden="true">·</span>
+                    <a
+                        href="https://github.com/ThallesFelipe"
+                        target="_blank"
+                        class="text-[#79740e] font-bold underline underline-offset-2 hover:opacity-80"
+                        >GitHub</a
+                    >
+                </div>
+            </footer>
+        </main>
     </body>
 </html>
